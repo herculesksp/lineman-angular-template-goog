@@ -14,15 +14,28 @@ module.exports = function(lineman) {
         "vendor/js/**/*.js"
       ],
       app: [
-        "app/js/app.js",
-        "app/js/**/*.js"
+        "app/app*.js",
+        "app/**/*.js"
       ]
     },
 
+    pages: {
+      source: [
+        "app/*.html",
+        "app/*.jade",
+        "app/*.us"
+      ]
+    },
+    
     less: {
       compile: {
         options: {
-          paths: ["vendor/css/normalize.css", "vendor/css/**/*.css", "app/css/**/*.less"]
+          paths: [
+            "vendor/css/normalize.css",
+            "vendor/css/**/*.css",
+            "app/*.less",
+            "app/**/*.less"
+          ]
         }
       }
     }
