@@ -1,0 +1,11 @@
+{
+  "name": "lineman-angular-template-goog",
+  "title": "An HTML/JS/CSS app using Angular.JS based on the Google project structure",
+  "version": "0.0.1",
+  "homepage": "https://github.com/herculesksp/lineman-angular-template",
+  "private": true,
+  "author": {
+    "name": "Prashanth K S",
+    "company": "eMukti"
+  }
+}

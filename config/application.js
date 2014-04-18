@@ -21,7 +21,7 @@ module.exports = function(lineman) {
     //   options: {
     //     module: "myModuleName"
     //   }
-    // }
+    // 
 
     server: {
       pushState: true

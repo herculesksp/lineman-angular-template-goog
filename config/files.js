@@ -10,6 +10,7 @@ module.exports = function(lineman) {
   return {
     js: {
       vendor: [
+        "vendor/bower/jquery/jquery.js",
         "vendor/js/angular.js",
         "vendor/js/**/*.js"
       ],
@@ -28,6 +29,8 @@ module.exports = function(lineman) {
     },
     
     less: {
+      main: "app/main.less",
+      app: "app/**/*.less",
       compile: {
         options: {
           paths: [
@@ -38,6 +41,13 @@ module.exports = function(lineman) {
           ]
         }
       }
-    }
+    },
+
+    css: {
+      app: [
+        "app/*.css",
+        "app/**/*.css"
+        ]
+    },
   };
 };
