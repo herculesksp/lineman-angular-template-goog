@@ -19,5 +19,8 @@
   "scripts": {
     "start": "lineman run",
     "test": "lineman spec-ci"
+  },
+  "dependencies": {
+    "lineman-less-goog": "0.0.2"
   }
 }
