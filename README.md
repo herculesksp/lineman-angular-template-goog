@@ -12,7 +12,7 @@ It includes the following features:
 4. A directive that shows a message on mouseover
 5. 2 Controllers, for `home` and `login`, with $scope variables set and bound
 6. A working, bound login form (username/password don't matter, but are required)
-7. Configured [grunt-ngmin](https://github.com/btford/grunt-ngmin) so you don't have to fully qualify angular dependencies.
+7. Configured [grunt-ng-annotate](https://github.com/mzgol/grunt-ng-annotate) so you don't have to fully qualify angular dependencies.
 8. Auto generated [sourcemaps](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) with inlined sources via [grunt-concat-sourcemap](https://github.com/kozy4324/grunt-concat-sourcemap) (you'll need to [enable sourcemaps](http://cl.ly/image/1d0X2z2u1E3b) in Firefox/Chrome to see this)
 9. [Unit Tests](https://github.com/linemanjs/lineman-angular-template/tree/master/spec) and [End-to-End Tests](https://github.com/linemanjs/lineman-angular-template/tree/master/spec-e2e)
 10. Configuration to run [Protractor](https://github.com/juliemr/protractor) for End-to-End Tests
@@ -37,21 +37,13 @@ To run the unit tests:
 
 To run the end-to-end tests:
 
+## End-to-End Tests
+
 1. `npm install protractor`
-2. `brew install selenium-server-standalone`
+2. `./node_modules/protractor/bin/webdriver-manager update`
 3. Make sure you have chrome installed.
 4. `lineman run` from 1 terminal window
 5. `lineman grunt spec-e2e` from another terminal window
-
-  Troubleshooting:
-
-    If you see this error: Warning: there's no selenium server jar at the specified location,
-    you may need to change the selenium-server-standalone jar version in config/spec-e2e.js
-    to the actual you see in /usr/local/opt/selenium-server-standalone (brew users may have a libexec directory).
-
-    If you see this error: Fatal error: The path to the driver executable must be set by the
-    webdriver.chrome.driver system property, you may need to download the chromedriver
-    (https://code.google.com/p/selenium/wiki/ChromeDriver) and place it in /usr/local/bin (mac).
 
 # Defining your apps angular.module in CoffeeScript
 
